@@ -1,3 +1,9 @@
 console.log("The Websit Has Started");
 alert("We use cookies!");
-swal("Here's a message!", "It's pretty, isn't it?");
+alertify.confirm("This is a confirm dialog.",
+  function(){
+    alertify.success('Ok');
+  },
+  function(){
+    alertify.error('Cancel');
+  });
